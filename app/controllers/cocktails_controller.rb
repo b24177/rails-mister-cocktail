@@ -20,6 +20,6 @@ class CocktailsController < ApplicationController
   private
 
   def cocktails_params
-    params.require(:cocktails).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end

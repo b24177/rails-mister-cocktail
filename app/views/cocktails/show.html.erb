@@ -4,4 +4,6 @@
   <li><%= @cocktail.doses %></li>
 </ul>
 
+<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+
 <%= link_to "Go back to cocktails list", cocktails_path %>
